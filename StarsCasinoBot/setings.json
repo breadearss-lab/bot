@@ -1,0 +1,6 @@
+{
+    "editor.autoClosingQuotes": "never",
+    "editor.formatOnPaste": false,
+    "files.autoGuessEncoding": false,
+    "files.encoding": "utf8"
+}

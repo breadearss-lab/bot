@@ -1,0 +1,48 @@
+﻿# config.py
+import os
+
+# Токен бота (ОБЯЗАТЕЛЬНО замени на свой!)
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8298962474:AAH7TuVp0gMKwgBuVYlIq5kdKbbw37pXfFs")
+
+# Проверка токена
+if BOT_TOKEN == "8298962474:AAH7TuVp0gMKwgBuVYlIq5kdKbbw37pXfFs":
+    raise ValueError("⚠️ ОШИБКА: Установите BOT_TOKEN в переменных окружения!")
+
+# Настройки игр
+GAME_PRICES = {
+    "poker": 10,
+    "roulette": 5,
+    "blackjack": 5,
+    "chess": 20
+}
+
+# Минимальные ставки
+MIN_BET = {
+    "poker": 1,
+    "roulette": 1,
+    "blackjack": 1,
+    "chess": 5
+}
+
+# Максимальные ставки
+MAX_BET = {
+    "poker": 500,
+    "roulette": 200,
+    "blackjack": 200,
+    "chess": 500
+}
+
+# Стартовый баланс (бесплатные звёзды для теста)
+START_BALANCE = 50
+
+# Максимальный баланс (защита от читов)
+MAX_BALANCE = 100000
+
+# Название базы данных
+DATABASE_NAME = "casino_bot.db"
+
+# Таймаут игры (секунды)
+GAME_TIMEOUT = 300  # 5 минут
+
+# Лимит активных игр на пользователя
+MAX_ACTIVE_GAMES = 1
